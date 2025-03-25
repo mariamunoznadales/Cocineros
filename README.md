@@ -1,3 +1,5 @@
+# INFORME
+
 # 1. Descripción del Problema
 
 En un entorno de restaurante con alta demanda, se necesita un sistema eficiente para:
