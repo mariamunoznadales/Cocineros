@@ -134,10 +134,13 @@ Tiempo promedio de preparación, pedidos urgentes atendidos, etc.
 
 El sistema implementado resuelve eficientemente el problema de gestión de pedidos en un restaurante con las siguientes características:
 
-Gestión priorizada: Los pedidos urgentes no esperan.
-Control de recursos: No se satura la cocina con demasiados cocineros.
-Concurrencia segura: No hay corrupción de datos por accesos simultáneos.
-Monitoreo en tiempo real: Permite saber qué pedidos están en espera y cuáles ya están listos.
+--> Gestión priorizada: Los pedidos urgentes no esperan.
+
+--> Control de recursos: No se satura la cocina con demasiados cocineros.
+
+--> Concurrencia segura: No hay corrupción de datos por accesos simultáneos.
+
+--> Monitoreo en tiempo real: Permite saber qué pedidos están en espera y cuáles ya están listos.
 
 ## Próximos pasos:
 
