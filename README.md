@@ -90,7 +90,7 @@ Muestra constantemente:
 
 # 3. Análisis de Rendimiento
 
-## 3.1. Ventajas del Diseño
+## 3.1. Ventajas  
 ✔ Priorización eficiente:
 
 Los pedidos urgentes (prioridad 1) siempre se atienden primero.
