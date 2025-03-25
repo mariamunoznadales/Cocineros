@@ -78,22 +78,17 @@ Muestra constantemente:
 
 -Pedidos completados.
 
-## 2.3. Manejo de Concurrencia
+## 2.3. Manejo de Concurrencia
 
-Semáforo: Controla que no trabajen más de 5 cocineros a la vez.
+--> Semáforo: Controla que no trabajen más de 5 cocineros a la vez.
 
-Cola thread-safe (PriorityQueue): Garantiza que no haya condiciones de carrera al extraer pedidos.
+--> Cola thread-safe (PriorityQueue): Garantiza que no haya condiciones de carrera al extraer pedidos.
 
-Mutex implícito en listas: Evita corrupción de datos al modificar waiting_orders y completed_orders.
+--> Mutex implícito en listas: Evita corrupción de datos al modificar waiting_orders y completed_orders.
 
-3. Análisis de Rendimiento
-3.1. Métricas Clave
-Parámetro	Valor	Descripción
-Cocineros base	3	Número inicial de cocineros activos.
-Cocineros máximos	5	Límite superior de cocineros permitidos.
-Tiempo de preparación	2-5 seg	Aleatorio para simular variabilidad.
-Timeout de inactividad	5 seg	Si no hay pedidos en 5 seg, el cocinero se detiene.
-3.2. Ventajas del Diseño
+# 3. Análisis de Rendimiento
+
+## 3.2. Ventajas del Diseño
 ✔ Priorización eficiente:
 
 Los pedidos urgentes (prioridad 1) siempre se atienden primero.
@@ -114,7 +109,7 @@ Las listas waiting_orders y completed_orders permiten ver el estado actual.
 
 No hay condiciones de carrera gracias a PriorityQueue y el semáforo.
 
-3.3. Posibles Mejoras
+## 3.3. Posibles Mejoras
 🔧 Tiempo de espera dinámico:
 
 Ajustar automáticamente el timeout según la carga de trabajo.
@@ -135,7 +130,8 @@ Reemplazar la salida por consola con un panel visual más amigable.
 
 Tiempo promedio de preparación, pedidos urgentes atendidos, etc.
 
-4. Conclusión
+# 4. Conclusión
+
 El sistema implementado resuelve eficientemente el problema de gestión de pedidos en un restaurante con las siguientes características:
 
 Gestión priorizada: Los pedidos urgentes no esperan.
@@ -143,7 +139,7 @@ Control de recursos: No se satura la cocina con demasiados cocineros.
 Concurrencia segura: No hay corrupción de datos por accesos simultáneos.
 Monitoreo en tiempo real: Permite saber qué pedidos están en espera y cuáles ya están listos.
 
-Próximos pasos:
+--> Próximos pasos:
 
 Implementar persistencia para guardar el historial de pedidos.
 
