@@ -88,7 +88,7 @@ Muestra constantemente:
 
 # 3. Análisis de Rendimiento
 
-## 3.2. Ventajas del Diseño
+## 3.1. Ventajas del Diseño
 ✔ Priorización eficiente:
 
 Los pedidos urgentes (prioridad 1) siempre se atienden primero.
@@ -109,7 +109,7 @@ Las listas waiting_orders y completed_orders permiten ver el estado actual.
 
 No hay condiciones de carrera gracias a PriorityQueue y el semáforo.
 
-## 3.3. Posibles Mejoras
+## 3.2. Posibles Mejoras
 🔧 Tiempo de espera dinámico:
 
 Ajustar automáticamente el timeout según la carga de trabajo.
@@ -139,7 +139,7 @@ Control de recursos: No se satura la cocina con demasiados cocineros.
 Concurrencia segura: No hay corrupción de datos por accesos simultáneos.
 Monitoreo en tiempo real: Permite saber qué pedidos están en espera y cuáles ya están listos.
 
---> Próximos pasos:
+## Próximos pasos:
 
 Implementar persistencia para guardar el historial de pedidos.
 
